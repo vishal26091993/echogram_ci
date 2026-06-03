@@ -50,6 +50,12 @@ $routes->post('/getCountry', 'Authentication\AuthenticationController::getCountr
 $routes->post('/getState', 'Authentication\AuthenticationController::getState');
 $routes->post('/getCity', 'Authentication\AuthenticationController::getCity');
 
+$routes->post('api/client-login', 'Api::clientLogin');
+
+$routes->post('api/contact-lists', 'Api::getContactLists');
+
+$routes->post('api/contact-numbers', 'Api::getContactNumbers');
+
 // settion
 $routes->post('getProfileList', 'Authentication\AuthenticationController::getProfileList', ['as' => 'getProfileList']);
 $routes->post('update_profile', 'Authentication\AuthenticationController::update_profile', ['as' => 'update_profile']);
